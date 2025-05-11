@@ -26,11 +26,15 @@ presentation layers to ensure separation of concerns.
 # Install mason_cli if not already installed
 dart pub global activate mason_cli
 
-# Add this brick locally
-mason add flutter_clean_arch --git-url https://github.com/priyanshi-pandya/flutter-clean-arch-brick.git --git-path .
+# initialize mason
+mason init
 
-# Or add from brick registry if published
-# mason add flutter_clean_arch
+# Add this brick locally
+mason add feature 
+
+# create a feature
+mason make feature --name auth
+
 ```
 
 ## Usage
